@@ -10,7 +10,7 @@ font-family: 'Open Sans', sans-serif;*/
 }
 
 body{
-  background-color: grey;
+  background-color: black;
 }
 
 .wrapper {
@@ -50,29 +50,6 @@ a.h1-link:hover {
   display: inline-block;
 }
 
-.video-background-controls button {
-				font-size: 32px;
-				display: inline-block;
-				padding: 0px;
-				margin: 0px;
-				height: 32px;
-				width: 32px;
-				border-radius: 16px;
-				line-height: 32px;
-				border: none;
-				background: none;
-				-webkit-appearance: none;
-				color: white;
-				filter: drop-shadow(0px 0px 1px black);
-				cursor: pointer;
-				opacity: 1;
-				transition: all 250ms ease-in-out;
-				margin-left: 10px;
-			}
-
-			.video-background-controls button:hover {
-				opacity: 0.5;
-			}
 
 @keyframes tilt-header {
   0% {transform: rotate(0deg);}
