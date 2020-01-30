@@ -12,19 +12,32 @@
 </head>
 
 <body>
-
+<!--
 	<video autoplay muted loop id="music-video-comp">
-    <source src="images/music-video.mp4" type="video/mp4">
-      Your browser does not support HTML5 video.
-  </video>
 
-	<div class="wrapper">
+      Your browser does not support HTML5 video.
+  </video> -->
+
+	<div class="wrapper" id="ytbg" data-youtube="https://www.youtube.com/watch?v=eEpEeyqGlxA">
         <div class="landing">
-      	<a href="subpage-one.html"<h1>TALKING HEADS</h1></a>
+      	<h1><a class="h1-link" href="subpage-one.html">TALKING HEADS</a></h1>
         </div>
       </div>
 
 	</header>
 
+
 </body>
 </html>
+
+<script
+  src="http://code.jquery.com/jquery-3.4.1.min.js"
+  integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="
+  crossorigin="anonymous"></script>
+	<script src="js/jquery.youtube-background.js"></script>
+
+<script type="text/javascript">
+		 jQuery(document).ready(function() {
+				 $('[data-youtube]').youtube_background();
+		 });
+ </script>
