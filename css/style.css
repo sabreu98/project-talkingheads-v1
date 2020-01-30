@@ -6,7 +6,7 @@ font-family: 'Open Sans', sans-serif;*/
   align: center;
   bottom: 0;
   max-width: 100%;
-  max-height: 400%;
+  max-height: 200%;
 }
 
 body{
@@ -24,7 +24,7 @@ div .landing {
   max-width: 900px;
   margin: 0 auto;
   position: relative;
-  top: 100px;
+  top: 200px;
 }
 
 
@@ -32,28 +32,34 @@ h1 {
 	font-family: 'Open Sans', sans-serif;
 	text-align: center;
   font-style: italic;
-  color: pink;
   font-weight: 900;
-  font-size: 75px;
+  font-size: 200px;
+}
+h1 {
+
+    -webkit-text-stroke-width: 7px;
+    -webkit-text-stroke-color: white;
+    text-decoration: none;
 }
 
 .h1-link {
   text-decoration: none;
-  color:pink;
+  color:black;
+  text-align: center;
 
 }
 
 a.h1-link:hover {
   animation-name: tilt-header;
-  animation-duration: 1s;
-  transform: rotate (30deg);
+  animation-duration: 1.5s;
   display: inline-block;
 }
 
 
 @keyframes tilt-header {
   0% {transform: rotate(0deg);}
-  100% {transform: rotate(30deg);}
+  50% {transform: rotate(-50deg);}
+  100% {transform: rotate(0deg);}
 }
 @media only screen and (min-width:768px) {
 
