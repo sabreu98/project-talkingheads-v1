@@ -1,5 +1,7 @@
 /* Enter your Styles below!
-font-family: 'Open Sans', sans-serif;*/
+font-family: 'Open Sans', sans-serif;
+font-family: 'Shrikhand', cursive;
+*/
 
 #music-video-comp {
   position: fixed;
@@ -17,49 +19,50 @@ body{
   color: black;
   background-size: cover;
   max-width: 900px;
-  margin: 250px auto;
+  margin: 200px auto;
 }
 
 div .landing {
   max-width: 900px;
   margin: 0 auto;
   position: relative;
-  top: 200px;
+  top: 100px;
 }
 
 
 h1 {
-	font-family: 'Open Sans', sans-serif;
+  font-family: 'Shrikhand', cursive;
 	text-align: center;
   font-style: italic;
-  font-weight: 900;
-  font-size: 200px;
+  font-weight: 400;
+  font-size: 75px;
 }
 h1 {
-
-    -webkit-text-stroke-width: 7px;
-    -webkit-text-stroke-color: white;
+    -webkit-text-fill-color: transparent;
+    -webkit-text-stroke-width: 1.5px;
+    -webkit-text-stroke-color: wheat;
     text-decoration: none;
 }
 
 .h1-link {
   text-decoration: none;
-  color:black;
+  color:wheat;
   text-align: center;
 
 }
 
 a.h1-link:hover {
   animation-name: tilt-header;
-  animation-duration: 1.5s;
+  animation-duration: 3s;
   display: inline-block;
+  -webkit-text-fill-color:wheat;
 }
 
 
 @keyframes tilt-header {
   0% {transform: rotate(0deg);}
-  50% {transform: rotate(-50deg);}
-  100% {transform: rotate(0deg);}
+  100% {transform: rotate(180deg);}
+
 }
 @media only screen and (min-width:768px) {
 
