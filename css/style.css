@@ -2,6 +2,7 @@
 font-family: 'Open Sans', sans-serif;
 font-family: 'Shrikhand', cursive;
 font-family: 'IBM Plex Sans', sans-serif;
+font-family: 'IBM Plex Serif', serif;
 
 */
 
@@ -29,7 +30,7 @@ body{
 }
 
 ul{
-  margin: 20px;
+  margin: 25px;
   padding: 0px;
 }
 
@@ -45,7 +46,7 @@ ul li a {
   font-size: 125px;
   display:inline-block;
   width:auto;
-  padding:20px;
+  padding:8px;
 }
 
 a.facts-link:hover {
@@ -54,7 +55,7 @@ a.facts-link:hover {
 
 a.facts-link:hover:after{
   content:'FACTS ARE SIMPLE';
-  font-size:100px;
+  font-size:95px;
   font-family: 'IBM Plex Sans', sans-serif;
   font-weight: 900;
   -webkit-text-fill-color: wheat;
@@ -65,7 +66,7 @@ a.discography-link:hover {
 
 a.discography-link:hover:after{
   content:"THIS AIN'T NO DISCO";
-  font-size:100px;
+  font-size:95px;
   font-family: 'IBM Plex Sans', sans-serif;
   font-weight: 900;
   -webkit-text-fill-color: wheat;
@@ -77,7 +78,7 @@ a.videography-link:hover {
 
 a.videography-link:hover:after{
   content:"I'M A TELEVISION MAN";
-  font-size:100px;
+  font-size:95px;
   font-family: 'IBM Plex Sans', sans-serif;
   font-weight: 900;
   -webkit-text-fill-color: wheat;
@@ -89,7 +90,19 @@ a.members-link:hover {
 
 a.members-link:hover:after{
   content:"WE ARE CREATURES";
-  font-size:100px;
+  font-size:95px;
+  font-family: 'IBM Plex Sans', sans-serif;
+  font-weight: 900;
+  -webkit-text-fill-color: wheat;
+}
+
+a.home-link:hover {
+  font-size:0px;
+}
+
+a.home-link:hover:after{
+  content:"IS WHERE I WANT TO BE";
+  font-size:95px;
   font-family: 'IBM Plex Sans', sans-serif;
   font-weight: 900;
   -webkit-text-fill-color: wheat;
@@ -207,16 +220,49 @@ h1 {
 
 a.h1-link:hover {
   animation-name: tilt-header;
-  animation-duration: 3s;
+  animation-duration: 1s;
   display: inline-block;
   -webkit-text-fill-color:wheat;
+}
+
+.callout {
+  text-decoration:none;
+  font-family: 'IBM Plex Serif', serif;
+  font-size: 100px;
+  font-weight:medium;
+  color: wheat;
+  text-align: left;
+  display:block;
+  margin-top:50px;
+  margin-left:10%;
+  margin-bottom: 50px;
+}
+
+.emphasis{
+  text-decoration:none;
+  font-family: 'IBM Plex Sans', sans-serif;
+  font-size: 100px;
+  font-weight:bold;
+  color: wheat;
+
+}
+
+#facts-p1{
+  font-family: 'IBM Plex Serif', serif;
+  font-size: 14px;
+  color:wheat;
+  display:block;
+  width: 37%;
+  line-height:normal;
+  margin-top: 00%;
+  margin-left:20%
 }
 
 
 
 @keyframes tilt-header {
   0% {transform: rotate(0deg);}
-  100% {transform: rotate(180deg);}
+  100% {transform: rotate(-30deg);}
 
 }
 

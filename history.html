@@ -2,33 +2,65 @@
 <html lang="en">
 <head>
 	<meta charset="UTF-8">
-	<title>History</title>
+	<title>Menu</title>
 	<meta name="viewport" content="width=device-width">
 	<link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
 	<link rel="icon" href="favicon.ico" type="image/x-icon">
 	<!-- meyer-reset is a special css library that overrides all the ugle default css styles that come with html5 -->
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css">
 	<link rel="stylesheet" href="css/style.css">
-
+	<link href="https://fonts.googleapis.com/css?family=IBM+Plex+Sans:400,700&display=swap" rel="stylesheet">
 </head>
-
 <body>
-  <div class="navbar">
-		<a href="index.html">Talking Heads</a>
-		<a href="subpage-one.html">Menu</a>
+
+	<div id="sidebar">
+		<ul>
+			<li><a class="facts-link" href="history.html">FACTS</a></li>
+			<li><a class="discography-link" href="discography.html">DISCOGRAPHY</a></li>
+			<li><a class="videography-link" href="videography.html">VIDEOGRAPHY</a></li>
+			<li><a class="members-link" href="members.html">MEMBERS</a></li>
+			<li><a class="home-link" href="subpage-one.html">HOME</a></li>
+		</ul>
+		<div id="sidebar-btn">
+			<span></span>
+			<span></span>
+			<span></span>
+		</div>
+
+		<div id="talkingheads-btn">
+			<h1><a class="h1-btn" href="index.html">TALKING HEADS</a></h1>
+		</div>
+
 	</div>
 
-  <main>
-    <h1>History</h1>
-    <p1>In 1975, in New York City, at the back of a narrow, dark room called the Lower Manhattan Ocean Club,
-    a triad of misfits tentatively took the stage. Their leader announced in a reed-thin voice,
-  “The name of this band is Talking Heads,” and then they launched into a devastating set. The bass was pumped
-  by a moppet who stared from fretboard to stage front through doleful eyes and blond bangs. The drum kit was pounded
-  by a tousle-haired boy in a rugby shirt, whose unflinching ear-to-ear grin could be spied just above the hi-hat.
-  Up front, the wiry singer pulsed in place. His guitar swung from his neck like a noose; his resemblance to Tony Perkins
-  only added to the menace. The trio could have been dropped from an alien aircraft, or taken a hard left off the Yellow Brick Road.
-    </p1>
-  </main>
+	<main>
+		<h1 class="callout"><em class="emphasis">FACTS</em> are <br> living turned <br> inside out.</h1>
+		<div id="facts-p1">
+			<p1>1. Talking Heads are named after a television term."Talking Head" is a television term for a person, usually, a newscaster, speaking on camera.<br><br>
+3. Talking Heads collaborated with producer Brian Eno on More Songs About Buildings and Food (1978), Fear of Music (1979), and Remain in Light (1980).<br><br>
+4. Bryne’s lyrics are inspired by preachers, one day finding himself shouting, “You may find yourself behind the wheel of a large automobile.”<br><br>
+5. David Byrne, Chris Frantz and Tina Weymouth attended art school together in Providence, Rhode Island. It was there that the three formed their first music group called “The Artistics” in 1974.
+			</p1>
+		</div>
 
+		<div id="facts-img">
+			<img src="images/facts-image.jpg" alt="">
+		</div>
+	</main>
+
+
+	<!-- link for jquery -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js">
+</script>
+
+	<script>
+
+			$(document).ready(function(){
+				$('#sidebar-btn').click(function(){
+					$('#sidebar').toggleClass('visible');
+				});
+			});
+
+		</script>
 </body>
 </html>
