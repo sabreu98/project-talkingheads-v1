@@ -12,26 +12,38 @@
 </head>
 <body>
 
-	<div class="navbar">
-		<a href="index.html">Talking Heads</a>
-		<a href="subpage-one.html">Menu</a>
+	<div id="sidebar">
+		<ul>
+			<li><a href="#">Link 1</a></li>
+			<li><a href="#">Link 2</a></li>
+			<li><a href="#">Link 3</a></li>
+			<li><a href="#">Link 4</a></li>
+		</ul>
+		<div id="sidebar-btn">
+			<span></span>
+			<span></span>
+			<span></span>
+		</div>
+
+		<div id="talkingheads-btn">
+			<h1><a class="h1-btn" href="index.html">TALKING HEADS</a></h1>
+		</div>
+		
 	</div>
 
-	<main>
-		<a href="history.html"<h1>History</h1></a>
-		<a href="discography.html"<h1>Discography</h1></a>
-		<a href="members.html"<h1>Members</h1></a>
-		<a href="videography.html"<h1>Videography</h1></a>
-	</main>
-	<footer>
-		<!-- footer content here -->
-	</footer>
+
 	<!-- link for jquery -->
-	<script
-  	src="https://code.jquery.com/jquery-3.4.1.min.js"
-  	integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="
-  	crossorigin="anonymous"></script>
-  	<!-- link for your script file -->
-  	<script src="js/script.js"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js">
+</script>
+
+	<script>
+
+			$(document).ready(function(){
+				$('#sidebar-btn').click(function(){
+					$('#sidebar').toggleClass('visible');
+				});
+			});
+
+		</script>
 </body>
 </html>
