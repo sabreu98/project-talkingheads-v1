@@ -1,68 +1,114 @@
 /* Enter your Styles below!
 font-family: 'Open Sans', sans-serif;
 font-family: 'Shrikhand', cursive;
+font-family: 'IBM Plex Sans', sans-serif;
+
 */
 
 
 body{
   margin:0px;
   padding:0px;
-  background-color: black;
+  background-color: #BF2B2D;
 }
 
 #sidebar {
-  background:rgb(204,51,51);
+  background:#BF2B2D;
   width:95%;
   height:100%;
   display:block;
   position:absolute;
   left:-95%;
   top:0px;
-  transition:left 0.3s linear;
+  transition:left 0.7s linear;
 }
 
 #sidebar.visible {
   left:0px;
-  transition:left .7s linear;
+  transition:left 0.7s linear;
 }
 
 ul{
-  margin: 50px;
+  margin: 20px;
   padding: 0px;
 }
 
 ul li{
   list-style:none;
 }
-
-ul li a{
+ul li a {
   text-decoration: none;
   font-family: 'Shrikhand', cursive;
   -webkit-text-fill-color: transparent;
   -webkit-text-stroke-width: 1.5px;
   -webkit-text-stroke-color: wheat;
-  font-size: 100px;
-  color:#ccc;
+  font-size: 125px;
   display:inline-block;
   width:auto;
-  padding:10px;
+  padding:20px;
+}
 
+a.facts-link:hover {
+  font-size:0px;
+}
+
+a.facts-link:hover:after{
+  content:'FACTS ARE SIMPLE';
+  font-size:100px;
+  font-family: 'IBM Plex Sans', sans-serif;
+  font-weight: 900;
+  -webkit-text-fill-color: wheat;
+}
+a.discography-link:hover {
+  font-size:0px;
+}
+
+a.discography-link:hover:after{
+  content:"THIS AIN'T NO DISCO";
+  font-size:100px;
+  font-family: 'IBM Plex Sans', sans-serif;
+  font-weight: 900;
+  -webkit-text-fill-color: wheat;
+}
+
+a.videography-link:hover {
+  font-size:0px;
+}
+
+a.videography-link:hover:after{
+  content:"I'M A TELEVISION MAN";
+  font-size:100px;
+  font-family: 'IBM Plex Sans', sans-serif;
+  font-weight: 900;
+  -webkit-text-fill-color: wheat;
+}
+
+a.members-link:hover {
+  font-size:0px;
+}
+
+a.members-link:hover:after{
+  content:"WE ARE CREATURES";
+  font-size:100px;
+  font-family: 'IBM Plex Sans', sans-serif;
+  font-weight: 900;
+  -webkit-text-fill-color: wheat;
 }
 
 #sidebar-btn {
   display: inline-block;
   vertical-align: middle;
-  width: 20px;
+  width: 25px;
   height:15px;
   cursor:pointer;
   margin:20px;
   position:absolute;
   top:0px;
-  right:-60px;
+  right:-68px;
 }
 
 #sidebar-btn span {
-  height:2px;
+  height:3px;
   background:wheat;
   margin-bottom:5px;
   display:block;
@@ -77,18 +123,44 @@ ul li a{
 }
 
 #talkingheads-btn {
-  display: inline-block;
+  display: block;
   vertical-align: middle;
   width: 20px;
-  height:20px;
+  height: 20px;
   cursor:pointer;
   margin:20px;
   position:absolute;
-  top:85%;
+  top:90%;
   right:-60px;
   -webkit-transform: rotate(-90deg);)
-  text-decoration: none;
+
 }
+
+.h1-btn {
+  font-size: 18px;
+  text-decoration: none;
+  color: wheat;
+  text-align: center;
+}
+
+#s1-video {
+  display: block;
+  vertical-align: middle;
+  width: 20px;
+  height: 20px;
+  margin:0px;
+  position:absolute;
+  top:0px;
+  right:-95px;
+}
+
+#running-video {
+  max-height:100vh;
+  width:1205px;
+  object-fit:fill;
+}
+
+
 #music-video-comp {
   position: fixed;
   align: center;
