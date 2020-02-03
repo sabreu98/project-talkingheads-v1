@@ -9,17 +9,93 @@
 	<!-- meyer-reset is a special css library that overrides all the ugle default css styles that come with html5 -->
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css">
 	<link rel="stylesheet" href="css/style.css">
+	<link href="https://fonts.googleapis.com/css?family=IBM+Plex+Sans:400,700&display=swap" rel="stylesheet">
 </head>
 
 <body>
-  <div class="navbar">
-    <a href="index.html">Talking Heads</a>
-    <a href="subpage-one.html">Menu</a>
-  </div>
 
-  <main>
-    <h1>Videography<h1>
-  </main>
+	<div id="sidebar">
+		<ul>
+			<li><a class="facts-link" href="history.html">FACTS</a></li>
+			<li><a class="discography-link" href="discography.html">DISCOGRAPHY</a></li>
+			<li><a class="videography-link" href="videography.html">VIDEOGRAPHY</a></li>
+			<li><a class="members-link" href="members.html">MEMBERS</a></li>
+			<li><a class="home-link" href="subpage-one.html">HOME</a></li>
+		</ul>
+		<div id="sidebar-btn">
+			<span></span>
+			<span></span>
+			<span></span>
+		</div>
 
+		<div id="talkingheads-btn">
+			<h1><a class="h1-btn" href="index.html">TALKING HEADS</a></h1>
+		</div>
+
+	</div>
+
+	<main>
+
+		<div class="video-grid">
+			<div class="video-header">
+				<h1 class="callout">I'm watching everything...<br><em class="emphasis">TELEVISION</em> Man</h1>
+			</div>
+
+
+			<div class="video-p1">
+				<p1>
+					TITLE: Once in A Lifetime <br>
+					YEAR: 1981 <br>
+					DIRECTOR: Toni Basil & David Byrne<br><br>
+
+					TITLE: Crosseyed & Painless<br>
+					YEAR: 1981<br>
+					DIRECTOR: Toni Basil<br><br>
+
+					TITLE: Burning Down the House<br>
+					YEAR: 1982<br>
+					DIRECTOR: David Byrne<br><br>
+
+					TITLE: This Must be the Place<br>
+					YEAR: 1983<br>
+					DIRECTOR: David Byrne<br><br>
+
+					TITLE: Slippery People <br>
+					YEAR: 1984<br>
+					DIRECTOR: Jonathan Demme<br><br>
+
+					TITLE: Road to Nowhere<br>
+					YEAR: 1985<br>
+					DIRECTOR: David Byrne &<br>
+					Stephen R. Johnson<br><br>
+
+					TITLE: The Lady Don't Mind<br>
+					YEAR: 1985<br>
+					DIRECTOR: Jim Jarmusch<br><br>
+
+					TITLE: And She Was<br>
+					YEAR: 1985<br>
+					DIRECTOR: Jim Blashfield<br>
+				</p1>
+			</div>
+
+		</div>
+
+	</main>
+
+
+	<!-- link for jquery -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js">
+</script>
+
+	<script>
+
+			$(document).ready(function(){
+				$('#sidebar-btn').click(function(){
+					$('#sidebar').toggleClass('visible');
+				});
+			});
+
+		</script>
 </body>
 </html>
