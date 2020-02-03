@@ -9,16 +9,93 @@
 	<!-- meyer-reset is a special css library that overrides all the ugle default css styles that come with html5 -->
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css">
 	<link rel="stylesheet" href="css/style.css">
+	<link href="https://fonts.googleapis.com/css?family=IBM+Plex+Sans:400,700&display=swap" rel="stylesheet">
+
+<script>
+var audio1 = new Audio ();
+audio1.src="images/audio1.mp3"
+</script>
+
 </head>
-
 <body>
-  <div class="navbar">
-    <a href="index.html">Talking Heads</a>
-    <a href="subpage-one.html">Menu</a>
-  </div>
-  <main>
-    <h1>Discography<h1>
-  </main>
 
+	<div id="sidebar">
+		<ul>
+			<li><a class="facts-link" href="history.html">FACTS</a></li>
+			<li><a class="discography-link" href="discography.html">DISCOGRAPHY</a></li>
+			<li><a class="videography-link" href="videography.html">VIDEOGRAPHY</a></li>
+			<li><a class="members-link" href="members.html">MEMBERS</a></li>
+			<li><a class="home-link" href="subpage-one.html">HOME</a></li>
+		</ul>
+		<div id="sidebar-btn">
+			<span></span>
+			<span></span>
+			<span></span>
+		</div>
+
+		<div id="talkingheads-btn">
+			<h1><a class="h1-btn" href="index.html">TALKING HEADS</a></h1>
+		</div>
+
+	</div>
+
+	<main>
+
+		<div class="disco-grid">
+
+			<div class="disco-header">
+				<h1 class="callout">This ain't no party, this ain't no <em class="emphasis">DISCO.</em></h1>
+			</div>
+			<div id="album-covers">
+
+						<img src="images/album-1.jpg"alt=""width=200px></a>
+					</div>
+
+					<div class="album-2">
+						<img src="images/album-2.jpg"alt=""width=200px>
+					</div>
+
+					<div class="album-3">
+						<img src="images/album-3.jpg"alt=""width=200px>
+					</div>
+
+					<div class="album-4">
+						<img src="images/album-4.jpg"alt=""width=200px>
+					</div>
+
+					<div class="album-5">
+						<img src="images/album-5.jpg"alt=""width=200px>
+					</div>
+
+					<div class="album-6">
+						<img src="images/album-6.png"alt=""width=200px>
+					</div>
+
+					<div class= "album-7">
+						<img src="images/album-7.png"alt=""width=200px>
+					</div>
+
+					<div class= "album-8">
+						<img src="images/album-8.jpg"alt=""width=200px>
+					</div>
+			</div>
+		</div>
+
+	</main>
+
+
+	<!-- link for jquery -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js">
+</script>
+
+	<script>
+
+			$(document).ready(function(){
+				$('#sidebar-btn').click(function(){
+					$('#sidebar').toggleClass('visible');
+				});
+			});
+
+		</script>
 </body>
 </html>
